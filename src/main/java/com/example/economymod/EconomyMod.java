@@ -54,6 +54,7 @@ public class EconomyMod {
         // 初始化经济管理器
         event.enqueueWork(() -> {
             EconomyManager.init();
+
             StockMarket.init();
             LOGGER.info("经济系统初始化完成");
         });
