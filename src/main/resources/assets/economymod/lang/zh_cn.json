@@ -1,0 +1,42 @@
+{
+  "item.economymod.gold_coin": "金币",
+  "item.economymod.silver_coin": "银币",
+  "item.economymod.copper_coin": "铜币",
+  "item.economymod.bank_card": "银行卡",
+  "item.economymod.shop_deed": "商店契约",
+  "item.economymod.check": "支票",
+  
+  "block.economymod.atm_block": "ATM自动提款机",
+  "block.economymod.bank_block": "银行",
+  "block.economymod.shop_block": "商店",
+  "block.economymod.vault_block": "保险箱",
+  "block.economymod.exchange_block": "交易所",
+  
+  "itemGroup.economymod": "经济模组",
+  
+  "economy.command.balance": "余额查询",
+  "economy.command.pay": "转账",
+  "economy.command.deposit": "存款",
+  "economy.command.withdraw": "取款",
+  "economy.command.loan": "贷款",
+  "economy.command.repay": "还款",
+  "economy.command.history": "交易历史",
+  "economy.command.check": "开具支票",
+  "economy.command.daily": "每日奖励",
+  "economy.command.stats": "经济统计",
+  
+  "economy.message.insufficient_funds": "余额不足",
+  "economy.message.transaction_success": "交易成功",
+  "economy.message.transfer_received": "收到转账",
+  "economy.message.daily_reward_claimed": "已领取每日奖励",
+  "economy.message.daily_reward_already_claimed": "今日奖励已领取",
+  "economy.message.loan_approved": "贷款申请成功",
+  "economy.message.loan_denied": "贷款申请被拒绝",
+  "economy.message.repayment_success": "还款成功",
+  
+  "economy.gui.bank.title": "银行服务",
+  "economy.gui.shop.title": "商店管理",
+  "economy.gui.atm.title": "ATM服务",
+  "economy.gui.exchange.title": "交易所",
+  "economy.gui.vault.title": "保险箱"
+}
