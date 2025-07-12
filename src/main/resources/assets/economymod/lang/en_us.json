@@ -1,0 +1,42 @@
+{
+  "item.economymod.gold_coin": "Gold Coin",
+  "item.economymod.silver_coin": "Silver Coin",
+  "item.economymod.copper_coin": "Copper Coin",
+  "item.economymod.bank_card": "Bank Card",
+  "item.economymod.shop_deed": "Shop Deed",
+  "item.economymod.check": "Check",
+  
+  "block.economymod.atm_block": "ATM",
+  "block.economymod.bank_block": "Bank",
+  "block.economymod.shop_block": "Shop",
+  "block.economymod.vault_block": "Vault",
+  "block.economymod.exchange_block": "Exchange",
+  
+  "itemGroup.economymod": "Economy Mod",
+  
+  "economy.command.balance": "Balance",
+  "economy.command.pay": "Pay",
+  "economy.command.deposit": "Deposit",
+  "economy.command.withdraw": "Withdraw",
+  "economy.command.loan": "Loan",
+  "economy.command.repay": "Repay",
+  "economy.command.history": "Transaction History",
+  "economy.command.check": "Issue Check",
+  "economy.command.daily": "Daily Reward",
+  "economy.command.stats": "Economy Stats",
+  
+  "economy.message.insufficient_funds": "Insufficient funds",
+  "economy.message.transaction_success": "Transaction successful",
+  "economy.message.transfer_received": "Transfer received",
+  "economy.message.daily_reward_claimed": "Daily reward claimed",
+  "economy.message.daily_reward_already_claimed": "Daily reward already claimed",
+  "economy.message.loan_approved": "Loan approved",
+  "economy.message.loan_denied": "Loan denied",
+  "economy.message.repayment_success": "Repayment successful",
+  
+  "economy.gui.bank.title": "Bank Services",
+  "economy.gui.shop.title": "Shop Management",
+  "economy.gui.atm.title": "ATM Services",
+  "economy.gui.exchange.title": "Exchange",
+  "economy.gui.vault.title": "Vault"
+}

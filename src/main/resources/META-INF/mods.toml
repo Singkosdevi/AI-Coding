@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+issueTrackerURL="https://github.com/example/economymod/issues"
+
+[[mods]]
+modId="economymod"
+version="${file.jarVersion}"
+displayName="Economy Mod"
+updateJSONURL="https://example.com/economymod/update.json"
+displayURL="https://github.com/example/economymod"
+logoFile="economymod.png"
+credits="Created with love for the Minecraft community"
+authors="EconomyMod Team"
+description='''
+一个功能完整的Minecraft经济模组，提供货币系统、银行、商店、交易等功能。
+包含完整的经济生态系统，让您的服务器拥有真实的经济体验。
+
+功能特性：
+- 虚拟货币系统
+- 银行存取款
+- 玩家商店
+- 物品交易
+- 经济统计
+- 税收系统
+'''
+
+[[dependencies.economymod]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.economymod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
