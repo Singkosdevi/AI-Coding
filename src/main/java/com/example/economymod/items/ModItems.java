@@ -35,6 +35,10 @@ public class ModItems {
     public static final RegistryObject<Item> CHECK = ITEMS.register("check",
             () -> new CheckItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(16)));
 
+    // 股票证书
+    public static final RegistryObject<Item> STOCK_CERTIFICATE = ITEMS.register("stock_certificate",
+            () -> new StockCertificateItem(new Item.Properties().rarity(Rarity.RARE).stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

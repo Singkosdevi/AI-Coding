@@ -5,6 +5,7 @@
   "item.economymod.bank_card": "银行卡",
   "item.economymod.shop_deed": "商店契约",
   "item.economymod.check": "支票",
+  "item.economymod.stock_certificate": "股票证书",
   
   "block.economymod.atm_block": "ATM自动提款机",
   "block.economymod.bank_block": "银行",
@@ -38,5 +39,29 @@
   "economy.gui.shop.title": "商店管理",
   "economy.gui.atm.title": "ATM服务",
   "economy.gui.exchange.title": "交易所",
-  "economy.gui.vault.title": "保险箱"
+  "economy.gui.vault.title": "保险箱",
+  
+  "stock.command.list": "股票列表",
+  "stock.command.info": "股票信息",
+  "stock.command.buy": "买入股票",
+  "stock.command.sell": "卖出股票",
+  "stock.command.portfolio": "投资组合",
+  "stock.command.market": "市场概览",
+  "stock.command.gainers": "涨幅榜",
+  "stock.command.losers": "跌幅榜",
+  "stock.command.search": "搜索股票",
+  "stock.command.industry": "行业股票",
+  "stock.command.industries": "行业分类",
+  "stock.command.transactions": "交易历史",
+  "stock.command.dividends": "收取股息",
+  
+  "stock.message.market_closed": "市场已闭市",
+  "stock.message.insufficient_funds": "资金不足",
+  "stock.message.insufficient_shares": "持仓不足",
+  "stock.message.buy_success": "买入成功",
+  "stock.message.sell_success": "卖出成功",
+  "stock.message.stock_not_found": "未找到股票",
+  "stock.message.no_holdings": "暂无持仓",
+  "stock.message.dividend_received": "收到股息",
+  "stock.message.no_dividends": "暂无股息"
 }

@@ -5,6 +5,7 @@
   "item.economymod.bank_card": "Bank Card",
   "item.economymod.shop_deed": "Shop Deed",
   "item.economymod.check": "Check",
+  "item.economymod.stock_certificate": "Stock Certificate",
   
   "block.economymod.atm_block": "ATM",
   "block.economymod.bank_block": "Bank",
@@ -38,5 +39,29 @@
   "economy.gui.shop.title": "Shop Management",
   "economy.gui.atm.title": "ATM Services",
   "economy.gui.exchange.title": "Exchange",
-  "economy.gui.vault.title": "Vault"
+  "economy.gui.vault.title": "Vault",
+  
+  "stock.command.list": "Stock List",
+  "stock.command.info": "Stock Info",
+  "stock.command.buy": "Buy Stock",
+  "stock.command.sell": "Sell Stock",
+  "stock.command.portfolio": "Portfolio",
+  "stock.command.market": "Market Overview",
+  "stock.command.gainers": "Top Gainers",
+  "stock.command.losers": "Top Losers",
+  "stock.command.search": "Search Stocks",
+  "stock.command.industry": "Industry Stocks",
+  "stock.command.industries": "Industries",
+  "stock.command.transactions": "Transaction History",
+  "stock.command.dividends": "Collect Dividends",
+  
+  "stock.message.market_closed": "Market is closed",
+  "stock.message.insufficient_funds": "Insufficient funds",
+  "stock.message.insufficient_shares": "Insufficient shares",
+  "stock.message.buy_success": "Purchase successful",
+  "stock.message.sell_success": "Sale successful",
+  "stock.message.stock_not_found": "Stock not found",
+  "stock.message.no_holdings": "No holdings",
+  "stock.message.dividend_received": "Dividend received",
+  "stock.message.no_dividends": "No dividends available"
 }
