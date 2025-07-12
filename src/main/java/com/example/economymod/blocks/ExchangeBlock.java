@@ -31,26 +31,12 @@ public class ExchangeBlock extends Block {
             Component.literal("======= 全球交易所 =======").withStyle(ChatFormatting.DARK_GREEN), false
         );
         player.displayClientMessage(
-            Component.literal("欢迎来到全球物品交易市场！").withStyle(ChatFormatting.GREEN), false
+            Component.literal("欢迎来到全球交易市场！").withStyle(ChatFormatting.GREEN), false
         );
         player.displayClientMessage(Component.literal(""), false);
         
         player.displayClientMessage(
-            Component.literal("交易功能:").withStyle(ChatFormatting.BLUE), false
-        );
-        player.displayClientMessage(
-            Component.literal("• 全服物品买卖").withStyle(ChatFormatting.GRAY), false
-        );
-        player.displayClientMessage(
-            Component.literal("• 实时价格系统").withStyle(ChatFormatting.GRAY), false
-        );
-        player.displayClientMessage(
-            Component.literal("• 拍卖行功能").withStyle(ChatFormatting.GRAY), false
-        );
-        
-        player.displayClientMessage(Component.literal(""), false);
-        player.displayClientMessage(
-            Component.literal("交易命令:").withStyle(ChatFormatting.BLUE), false
+            Component.literal("🏪 物品交易:").withStyle(ChatFormatting.BLUE), false
         );
         player.displayClientMessage(
             Component.literal("• /exchange sell <价格> - 出售手持物品").withStyle(ChatFormatting.GRAY), false
@@ -61,13 +47,30 @@ public class ExchangeBlock extends Block {
         player.displayClientMessage(
             Component.literal("• /exchange list - 查看市场列表").withStyle(ChatFormatting.GRAY), false
         );
+        
+        player.displayClientMessage(Component.literal(""), false);
         player.displayClientMessage(
-            Component.literal("• /exchange search <物品> - 搜索物品").withStyle(ChatFormatting.GRAY), false
+            Component.literal("📈 股票交易:").withStyle(ChatFormatting.BLUE), false
+        );
+        player.displayClientMessage(
+            Component.literal("• /stock list - 查看股票列表").withStyle(ChatFormatting.GRAY), false
+        );
+        player.displayClientMessage(
+            Component.literal("• /stock buy <代码> <股数> - 买入股票").withStyle(ChatFormatting.GRAY), false
+        );
+        player.displayClientMessage(
+            Component.literal("• /stock sell <代码> <股数> - 卖出股票").withStyle(ChatFormatting.GRAY), false
+        );
+        player.displayClientMessage(
+            Component.literal("• /stock portfolio - 查看投资组合").withStyle(ChatFormatting.GRAY), false
+        );
+        player.displayClientMessage(
+            Component.literal("• /stock market - 查看市场概览").withStyle(ChatFormatting.GRAY), false
         );
         
         player.displayClientMessage(Component.literal(""), false);
         player.displayClientMessage(
-            Component.literal("拍卖功能:").withStyle(ChatFormatting.BLUE), false
+            Component.literal("🔨 拍卖功能:").withStyle(ChatFormatting.BLUE), false
         );
         player.displayClientMessage(
             Component.literal("• /auction start <起拍价> <时长> - 开始拍卖").withStyle(ChatFormatting.GRAY), false
@@ -81,7 +84,10 @@ public class ExchangeBlock extends Block {
         
         player.displayClientMessage(Component.literal(""), false);
         player.displayClientMessage(
-            Component.literal("注意: 所有交易将收取5%的手续费").withStyle(ChatFormatting.YELLOW), false
+            Component.literal("⚠️ 注意: 所有交易将收取手续费").withStyle(ChatFormatting.YELLOW), false
+        );
+        player.displayClientMessage(
+            Component.literal("股票交易手续费: 0.1% + 印花税0.05%").withStyle(ChatFormatting.YELLOW), false
         );
         player.displayClientMessage(
             Component.literal("=========================").withStyle(ChatFormatting.DARK_GREEN), false

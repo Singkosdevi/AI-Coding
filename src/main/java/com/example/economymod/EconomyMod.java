@@ -4,6 +4,8 @@ import com.example.economymod.commands.EconomyCommands;
 import com.example.economymod.economy.EconomyManager;
 import com.example.economymod.items.ModItems;
 import com.example.economymod.blocks.ModBlocks;
+import com.example.economymod.stock.StockMarket;
+import com.example.economymod.stock.StockCommands;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -52,6 +54,8 @@ public class EconomyMod {
         // 初始化经济管理器
         event.enqueueWork(() -> {
             EconomyManager.init();
+
+            StockMarket.init();
             LOGGER.info("经济系统初始化完成");
         });
     }
@@ -63,6 +67,8 @@ public class EconomyMod {
             event.accept(ModItems.SILVER_COIN);
             event.accept(ModItems.COPPER_COIN);
             event.accept(ModItems.BANK_CARD);
+            event.accept(ModItems.CHECK);
+            event.accept(ModItems.STOCK_CERTIFICATE);
         }
         
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
@@ -83,6 +89,7 @@ public class EconomyMod {
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event) {
         EconomyCommands.register(event.getDispatcher());
+        StockCommands.register(event.getDispatcher());
         LOGGER.info("经济命令注册完成");
     }
 
