@@ -161,6 +161,12 @@ class BTCMAStrategy:
             current_price = row['Close']
             signal = row['Filtered_Signal']
             
+            # 确保signal是标量值
+            if isinstance(signal, pd.Series):
+                signal = signal.iloc[0] if len(signal) > 0 else 0
+            if pd.isna(signal):
+                signal = 0
+            
             # 风险管理 - 止损止盈
             if self.position != 0:
                 if self.position == 1:  # 多头持仓
@@ -173,12 +179,12 @@ class BTCMAStrategy:
                         self._close_position(date, current_price, 'Risk Management')
             
             # 处理交易信号
-            if signal == 1 and self.position <= 0:  # 买入信号
+            if pd.notna(signal) and signal == 1 and self.position <= 0:  # 买入信号
                 if self.position == -1:  # 先平空头
                     self._close_position(date, current_price, 'Signal Close')
                 self._open_position(date, current_price, 1, 'MA Golden Cross')
                 
-            elif signal == -1 and self.position >= 0:  # 卖出信号
+            elif pd.notna(signal) and signal == -1 and self.position >= 0:  # 卖出信号
                 if self.position == 1:  # 先平多头
                     self._close_position(date, current_price, 'Signal Close')
                 self._open_position(date, current_price, -1, 'MA Death Cross')
